@@ -20,8 +20,8 @@ function setup() {
   // Player Base and Computer Base Object
   computerBase=new ComputerBase(100,random(450,height-300),180,150);
   playerBase=new PlayerBase(300,random(450,height-300),180,150);
-  player=new Player(285,playerBase.y-153,50,180);
-  computerPlayer=new Player(115,playerBase.y-153,50,180);
+  player=new Player(285,playerBase.body.y-153,50,180);
+  computerPlayer=new Player(115,playerBase.body.y-153,50,180);
  }
 
 function draw() {
